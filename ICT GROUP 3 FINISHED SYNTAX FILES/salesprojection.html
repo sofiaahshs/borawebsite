@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel Accomodation Form</title>
+            <style>
+
+                #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                }
+                
+                #customers td, #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+                }
+                
+                #customers tr:nth-child(even){background-color: #f2f2f2;}
+                
+                #customers tr:hover {background-color: #79b4f4;}
+                
+                #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: rgba(66, 122, 252);
+                color: white;
+                }
+
+                h1 {
+                
+                color: white;
+                text-align: right;
+                font-family: 'Trebuchet MS';
+                font-size: 700%;
+                padding-right: 40px;
+
+                }
+
+                p{
+                  color: white;
+                  text-align: right;
+                  font-family: 'Trebuchet MS';
+                  font-size: 200%;
+                  padding-right: 40px;
+                  margin-top: -50px;
+                }
+
+                div {
+                border: none;
+                background-color: rgb(70, 114, 236);    
+                text-align: center;
+                padding: 55px;
+                }
+
+                </style>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+         <div>
+          <h1>ADMIN PAGE</h1>
+          <p>Contained here is the projected sales revenue of associate hotels</p>
+        </div>       
+        <br>
+        <br>
+        
+    </head>
+<body>
+    <table id="customers">
+        <tr>
+          <th style="text-align: center;"colspan="8">Hotel Revenue Projection of Two Associated Hotels</th>
+          </tr>
+          <tr>
+          <th>Hotel</th>
+          <th>-</th>
+          <th>Rooms</th>
+          <th>Days open</th>
+          <th colspan="4">Room Nights</th>
+        </tr>
+        <tr>
+          <td><b>Hotel Information</b></td>
+          <td></td>
+          <td>50</td>
+          <td>300</td>
+          <td colspan="4">15,000</td>
+        </tr>
+        <tr>
+          <td colspan="8"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>2018</td>
+          <td>2019</td>
+          <td>2020</td>
+          <td>2021</td>
+          <td>2022</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td colspan="8"><b>Occupancy</b></td>
+        </tr>
+        <tr>
+          <td>Occupancy Rate</td>
+          <td></td>
+          <td>65%</td>
+          <td>75%</td>
+          <td>25%</td>
+          <td>38%</td>
+          <td>56%</td>
+          <td>64%</td>
+        </tr>
+        <tr>
+          <td>Room nights occupied</td>
+          <td></td>
+          <td> 9,750 </td>
+          <td> 11,250 </td>
+          <td> 3,750 </td>
+          <td> 5,700 </td>
+          <td> 8,400 </td>
+          <td> 9,600 </td>
+        </tr>
+        <tr>
+          <td colspan="8"></td>
+        </tr>
+        <tr>
+          <td colspan="8"><b>Other</b></td>
+        </tr>
+        <tr>
+          <td><i>Food & Beverages</i></td>
+          <td>10%</td>
+          <td>3,412,500</td>
+          <td>4,273,875</td>
+          <td>937,500</td>
+          <td>1,824,000</td>
+          <td>2,855,160</td>
+          <td>3,263,040</td>
+        </tr>
+        <tr>
+          <td><i>Other</i></td>
+          <td></td>
+          <td>5,000</td>
+          <td>5,200</td>
+          <td>5,900</td>
+          <td>6,600</td>
+          <td>7,800</td>
+          <td>9,700</td>
+        </tr>
+        <tr>
+          <td><i>Total other revenue</i></td>
+          <td></td>
+          <td>3,417,500</td>
+          <td>4,279,075</td>
+          <td>943,400</td>
+          <td>1,830,600</td>
+          <td>2,862,960</td>
+          <td>3,272,740</td>
+        </tr>
+        <td><b>Total other revenue</b></td>
+        <td></td>
+        <td> 37,542,500</td>
+        <td> 47,017,825</td>
+        <td> 10,318,400</td>
+        <td> 20,070,600</td>
+        <td> 31,414,560</td>
+        <td> 35,903,140</td>
+        <tr>
+        </tr>
+      </table>
+
+    <canvas id="myChart"></canvas>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['2018', '2019', '2020', '2021', '2022','2023',],
+        datasets: [{
+            label: 'Graphical form of total revenue of two associated hotels',
+            data: [37542500, 47017825, 10318400, 20070600,31414560 , 35903140,],
+            borderColor: 'rgba(66, 122, 252)',
+            tension: 0.1
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+        </script>
+
+</body>
+
+

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AKLAN - accomodation page</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+            
+        h1 {
+    
+            color: white;
+            text-align: right;
+            font-family: 'Trebuchet MS';
+            font-size: 600%;
+            padding-right: 40px;
+    
+        }
+    
+        h2 {
+    
+            color: white;
+            text-align: right;
+            font-family: 'Trebuchet MS';
+            font-size: 400%;
+            padding-right: 40px;
+    
+        }
+    
+        p {
+            color: white;
+            text-align: right;
+            font-family: 'Trebuchet MS';
+            font-size: 175%;
+            padding-right: 40px;
+        }
+    
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            background-image: url('boracay26shoestring.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    
+        .sidebar {
+            position: fixed;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            background-color: rgba(66, 122, 252, 0.77) ;
+            
+        }
+    
+        .sidebar header {
+            font-size: 75px;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            background: rgba(66, 122, 252);
+    
+        }
+
+        .div2 {
+            border: none;
+            background-color: rgba(70, 114, 236, 0.819);    
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-left: 400px;
+            margin-right: 100px;
+            padding: 55px;
+        }
+
+        .div3 {
+            border: none;
+            background-image: url(sdouble.jpg) ;    
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-left: 400px;
+            margin-right: 100px;
+            padding: 55px;
+            color: rgba(66, 122, 252);
+        }
+        .div4 {
+            border: none;
+            background-image: url(executive.jpg) ;    
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-left: 400px;
+            margin-right: 100px;
+            padding: 55px;
+            color: rgba(66, 122, 252);
+        }
+        .div5 {
+            border: none;
+            background-image: url(famsuit.jpg) ;    
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-left: 400px;
+            margin-right: 100px;
+            padding: 55px;
+            color: rgba(66, 122, 252);
+        }
+
+
+
+        .sidebar ul, a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+            border-width: 32px;
+            border-top: 1px solid rgba(172, 196, 254, 0.77);
+            border-bottom: 1px solid rgba(172, 196, 254, 0.77);
+        }
+    
+        .sidebar a:hover {
+             color: #03005d;
+        }
+    
+        li {
+            padding-left: 40px;
+        }
+    
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: none;
+            width: auto;
+            height:430px;
+        }
+    
+        .img2 {
+            display: block;
+            margin-left: auto;
+            margin-right: none;
+            width: auto;
+            height: 600px;
+        }
+
+        .image4 {
+        position: relative;
+        width: 600px;
+        margin-left: 400px;
+        margin-top: 100px;
+        margin-right: auto;
+    }
+
+    .imageimg4 {
+        display: block;
+        width: 100%;
+        border-radius: 15px;    
+    }
+
+    .imageoverlay4 {
+
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffff;
+        font-family: 'Trebuchet MS', sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imagetitle4 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .imagedescription4 {
+        font-size: 1em;
+        margin-top: 0.25em;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imageoverlay4:hover {
+        opacity: 1;
+    }
+
+    .image5 {
+        position: relative;
+        width: 600px;
+        margin-left: auto;
+        margin-top: -490px;
+        margin-right: 200px;
+    }
+
+    .imageimg5 {
+        display: block;
+        width: 100%;
+        border-radius: 15px;    
+    }
+
+    .imageoverlay5 {
+
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffff;
+        font-family: 'Trebuchet MS', sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imagetitle5 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .imagedescription5 {
+        font-size: 1em;
+        margin-top: 0.25em;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imageoverlay5:hover {
+        opacity: 1;
+    }
+            .button {
+        display: inline-block;
+        font-size: 100px;
+        padding: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        text-decoration: none;
+        background-color: #1e68d7c5;
+        color: #FFFFFF;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        margin-left: 400px;
+        }
+
+        .button:hover {
+        background-color: #5d99d1;
+}
+
+ 
+</style>
+</head>
+<body>
+            <div class="sidebar">
+                <header> MENU </header>
+                <ul>
+                    <li><a href= "ictproject.html">HOME</a></li>
+                        <li><a href= "ictprojectpage2.html">DESCRIPTION</a></li>
+                            <li><a href= "ictprojectpage3.html">ECONOMIC STATUS</a></li>
+                        <li><a href= "ictprojectpage4.html">TOURISM</a></li>
+                    <li><a href= "ictprojectpage5.html">MORE INFORMATION</a></li>
+                    <li><a href= "ictprojectpage6.html">TRAVEL ACCOMODATION</a></li>
+                    <li><a href= "ictprojectpage7.html">OUR HOTELS - CASA MESOGA</a></li>
+                    <li><a href= "ictprojectpage8.html">OUR HOTELS - ISLA DEL LORENZO</a></li>
+                </ul>
+            </div>  
+            <div>
+                <br>
+                <br>
+                <div class="div2">
+                    <h1>TRAVEL ACCOMODATION</h1>
+                    <p>Want to take your family on an amazing summer getaway to Aklan? Look no further for the cheapest and high quality hotels our website has to offer!</p> 
+                <br>
+                </div>
+                <div class="div2">
+                    <h1 style="text-align: center;">HOTELS</h1>
+                    <p style="text-align: center;">Selection of Extravagant hotels our agency has to offer</p> 
+                <br>
+            </div>
+            <div class="image4">
+                <img class="imageimg4" src="swimming-pool.jpg" alt="HOTEL 1">
+                <div class="imageoverlay4">
+                    <div class="imagetitle4">Casa Mesoga</div>
+                    <p class="imagedescription4">
+                        Near Nabas Wind Farm, 145 Haegin Street, Cayena Hills City 
+                        <br>
+                        <br>
+                        Casa Mesoga was built in the same year when the Manila Bulletin was established, that’s why the first article published by Manila Bulletin was all about Casa Mesoga. Casa Mesoga was also famous for having a successful partnership with Palacio Ruiz, Casa Mesoga was built to be gifted as a 10 year marriage anniversary gift.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="image5">
+                <img class="imageimg5" src="swimming-pooledit.png" alt="Isla del Lorenzo">
+                <div class="imageoverlay5">
+                    <div class="imagetitle5">Isla Del Lorenzo</div>
+                    <p class="imagedescription5">Isla de Lorenzo is a well renowned hotel known for its hospitality, cleanliness, and the exciting activities that awaits you. Isla de Lorenzo is a place where you can appreciate the beauty of Boracay whilst helping it! How you may ask? Well, Isla de Lorenzo donates 20% of their monthly revenue to help maintain the healthiness, cleanliness, and well-being of marine life</p>
+                </div>
+                </div>
+                <br>
+                <br>
+                
+                <a href="ictprojectpage9.html" class="button">Want to Book a Room?</a>
+
+                <div class="div2">
+                    <h1>Our offered Rooms</h1>
+                    <p>Collection of Rooms you'll simply enjoy</p>
+                </div>
+
+                <div class="div3">
+                    <h1>Superior Double or Twin Room</h1>
+                    <p>A flat-screen TV with cable and satellite channels, a safe, an electric kettle, and a mini-bar are included in the air-conditioned accommodation. A private bathroom with a shower, amenities, and a hairdryer is included.
+                        </p>
+                </div>
+
+                <div class="div4">
+                    <h1>Executive Suite</h1>
+                    <p>The lobby, restaurant, swimming pool, and the resort's main gate are all conveniently close to the Executive Suite. It has a sizable balcony with modern patio furniture. The golf course can be seen clearly from the balcony. A flat-screen TV with cable and satellite channels, an electric kettle, and a mini-bar are included in this deluxe suite. The private bathroom has a shower, complimentary toiletries, and a hairdryer.                      
+                        </p>
+                </div>
+                
+                <div class="div5">
+                    <h1>Family Suite</h1>
+                    <p>This large family suite opens to a balcony with sweeping views of the golf course and offers air conditioning. There are two bedrooms in it, as well as a living and eating space. The suite has a flat-screen cable TV, an electric kettle, a mini-bar, and a safe. The private bathroom has a hairdryer, a shower, and complimentary toiletries.
+                        </p>
+                </div>
+
+        
+    </body>
+</html>

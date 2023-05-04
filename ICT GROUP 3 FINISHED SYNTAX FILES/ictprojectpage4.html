@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+        
+    h1 {
+
+        color: white;
+        text-align: right;
+        font-family: 'Trebuchet MS';
+        font-size: 600%;
+        padding-right: 40px;
+
+    }
+
+    h2 {
+
+        color: white;
+        text-align: right;
+        font-family: 'Trebuchet MS';
+        font-size: 400%;
+        padding-right: 40px;
+
+    }
+
+    body {
+        font-family: 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        background-image: url('boracay26shoestring.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(66, 122, 252, 0.77) ;
+        
+    }
+
+    .sidebar header {
+        font-size: 75px;
+        color: white;
+        text-align: center;
+        line-height: 150px;
+        background: rgba(66, 122, 252);
+
+    }
+
+    .div2 {
+        border: none;
+        background-color: rgb(70, 114, 236);    
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 400px;
+        margin-right: 100px;
+        padding: 55px;
+    }
+
+    .div3 {
+        border: none;
+        background-color: rgb(70, 114, 236);    
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 400px;
+        margin-right: 800px;
+        padding: 55px;
+    }
+
+    .div4 {
+        border: none;
+        background-color: rgb(70, 114, 236);    
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 1200px;
+        margin-right: 100px;
+        padding: 55px;
+    }
+
+    .sidebar ul, a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 100px;
+        font-size: 20px;
+        color: white;
+        border-width: 32px;
+        border-top: 1px solid rgba(172, 196, 254, 0.77);
+        border-bottom: 1px solid rgba(172, 196, 254, 0.77);
+    }
+
+    .sidebar a:hover {
+         color: #03005d;
+    }
+
+    li {
+        padding-left: 40px;
+    }
+
+    .img {
+        display: block;
+        margin-left: auto;
+        margin-right: none;
+        width: auto;
+        height:430px;
+    }
+
+    .img2 {
+        display: block;
+        margin-left: auto;
+        margin-right: none;
+        width: auto;
+        height: 600px;
+    }
+
+    .image {
+        position: relative;
+        width: 400px;
+        margin-left: 400px;
+        margin-right: auto;
+    }
+
+    .imageimg {
+        display: block;
+        width: 100%;
+        border-radius: 15px;    
+    }
+
+    .imageoverlay {
+
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffff;
+        font-family: 'Trebuchet MS', sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imagetitle {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .imagedescription {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imageoverlay:hover {
+        opacity: 1;
+    }
+
+    .image2 {
+        position: relative;
+        width: 400px;
+        margin-left: 600px;
+        margin-right: auto;
+    }
+
+    .imageimg2 {
+        display: block;
+        width: 100%;
+        border-radius: 15px;    
+    }
+
+    .imageoverlay2 {
+
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffff;
+        font-family: 'Trebuchet MS', sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imagetitle2 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .imagedescription2 {
+        font-size: 1em;
+        margin-top: 0.25em;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imageoverlay2:hover {
+        opacity: 1;
+    }
+
+    .image3 {
+        position: relative;
+        width: 400px;
+        margin-left: 800px;
+        margin-right: auto;
+    }
+
+    .imageimg3 {
+        display: block;
+        width: 100%;
+        border-radius: 15px;    
+    }
+
+    .imageoverlay3 {
+
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffff;
+        font-family: 'Trebuchet MS', sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imagetitle3 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .imagedescription3 {
+        font-size: 1em;
+        margin-top: 0.25em;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imageoverlay3:hover {
+        opacity: 1;
+    }
+
+    .image4 {
+        position: relative;
+        width: 400px;
+        margin-left: 1000px;
+        margin-right: auto;
+    }
+
+    .imageimg4 {
+        display: block;
+        width: 100%;
+        border-radius: 15px;    
+    }
+
+    .imageoverlay4 {
+
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffff;
+        font-family: 'Trebuchet MS', sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imagetitle4 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .imagedescription4 {
+        font-size: 1em;
+        margin-top: 0.25em;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imageoverlay4:hover {
+        opacity: 1;
+    }
+    .image3 {
+        position: relative;
+        width: 400px;
+        margin-left: 800px;
+        margin-right: auto;
+    }
+    .image5 {
+        position: relative;
+        width: 400px;
+        margin-left: 1000px;
+        margin-right: auto;
+    }
+
+    .imageimg5 {
+        display: block;
+        width: 100%;
+        border-radius: 15px;    
+    }
+
+    .imageoverlay5 {
+
+        position: absolute;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffff;
+        font-family: 'Trebuchet MS', sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+
+    .imagetitle5 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .imagedescription5 {
+        font-size: 1em;
+        margin-top: 0.25em;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .imageoverlay5:hover {
+        opacity: 1;
+    }
+
+    .formheading {
+            font-family: Trebuchet;
+            text-align: center;
+            color:#2a569c;
+            text-align: center;
+            font-family: 'Trebuchet MS';
+            font-size: 300%;
+            padding: 5px;
+
+        }
+
+        input[type=text] {
+            font-family: Arial;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            
+        }
+
+        select {
+            font-family: Arial;
+            width: 100%;
+            padding: 16px 32px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #ffffff;
+        }
+
+        input[type=submit] {
+            width: auto;
+            background-color: #2a569c;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            font-style: bold;
+        }
+        .formdiv {
+            border-style: solid;
+            border-color: #2a569c;
+            border-radius: 25px;
+            background-color:#c2d7f8;
+            padding: 50px;
+            margin-top: -2261px;
+            margin-left: 905px;
+            margin-right: 100px;
+        }
+
+        .rightdiv2 {
+            border-style: solid;
+            border-color: #2a569c;
+            border-radius: 25px;
+            background-color:#c2d7f8;
+            padding: 50px;
+            margin-top: 100px;
+            margin-left: 905px;
+            margin-right: 100px;
+        }
+
+        ul.a {
+            list-style-position: outside;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 15px;
+            margin-right: 15px; 
+        }
+
+
+</style>
+
+
+    <body>
+        <div class="sidebar">
+            <header> MENU </header>
+            <ul>
+                <li><a href= "ictproject.html">HOME</a></li>
+                    <li><a href= "ictprojectpage2.html">DESCRIPTION</a></li>
+                        <li><a href= "ictprojectpage3.html">ECONOMIC STATUS</a></li>
+                    <li><a href= "ictprojectpage4.html">TOURISM</a></li>
+                <li><a href= "ictprojectpage5.html">MORE INFORMATION</a></li>
+                <li><a href= "ictprojectpage6.html">TRAVEL ACCOMODATION</a></li>
+                <li><a href= "ictprojectpage7.html">OUR HOTELS - CASA MESOGA</a></li>
+                <li><a href= "ictprojectpage8.html">OUR HOTELS - ISLA DEL LORENZO</a></li>
+            </ul>
+        </div>  
+        <div>
+            <br>
+            <br>
+        </div>
+        <h1>TOURISM</h1>
+        <br>
+        <br>
+        <div class="image">
+            <img class="imageimg" src="jawili.jpg" alt="jawili falls">
+            <div class="imageoverlay">
+                <div class="imagetitle">Jawili Falls</div>
+                <p class="imagedescription">
+                    There are seven cascades at Jawili Falls, all of which flow into swimming-friendly rock pools. The area has been developed with tourists in mind; there are showers and a modest restaurant accessible.
+
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="image">
+            <img class="imageimg2" src="Bakhawan_Kalibo_tourist_spots_new.jpg" alt="Bakhawan Ecopark">
+            <div class="imageoverlay2">
+                <div class="imagetitle2">Bakhawan Ecopark</div>
+                <p class="imagedescription2">
+                    The 1.3-kilometer track will take you deep into the forest. Various types of mangrove trees will be seen as you journey towards the end. You could also try riding a bamboo raft or kayak above the waters of the Eco-Park.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="image">
+            <img class="imageimg3" src="hurom-3.jpg" alt="Hurom-hurom cold spring resort">
+            <div class="imageoverlay3">
+                <div class="imagetitle3">Hurom-Hurom Cold Spring Resort</div>
+                <p class="imagedescription3">
+                    While being a pool, the main pool is actually a basin that collects water from a mountain spring. Being far less expensive than traveling all the way to Boracay, locals prefer taking a dip here. The water is really cold, which is ideal for summer.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="image">
+            <img class="imageimg4" src="hinugtan.jpg" alt="Hinugtan Beach Resort">
+            <div class="imageoverlay3">
+                <div class="imagetitle3">Hinugtan Beach Resort</div>
+                <p class="imagedescription3">
+                    A private beach resort called Hinugtan Beach Resort is found in Buruanga, Aklan, which is 45 minutes by boat from Boracay. For those seeking for a day trip to a deserted beach, it is now open to the public and is now accessible for Getaway tours from Boracay.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="image">
+            <img class="imageimg5" src="boracay.jpg" alt="Boracay">
+            <div class="imageoverlay5">
+                <div class="imagetitle5">Boracay</div>
+                <p class="imagedescription5">
+                    Boracay offers an abundant array of thrilling activities, including swimming, island hopping in the Philippines, diving, snorkeling, parasailing, kayaking, dining, and parties. Because of these, Boracay has consistently been listed in reliable publications' and travelers' choice lists as one of the world's top islands and beaches.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="image">
+            <img class="imageimg5" src="hacienda maria.jpg" alt="Hacienda Maria">
+            <div class="imageoverlay5">
+                <div class="imagetitle5">Hacienda Maria</div>
+                <p class="imagedescription5">
+                    In Buruanga, Aklan, there is a heritage and eco-tourism destination called Hacienda Maria. Its 14 hectares include a variety of natural beauties, including two caves with stalactite and stalagmite formations. A hike up to a waterfall just on property may also be taken by those who want to cool down.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="image">
+            <img class="imageimg5" src="Nabas.jpg" alt="Nabas Wind Farm">
+            <div class="imageoverlay5">
+                <div class="imagetitle5">Nabas Wind Farm</div>
+                <p class="imagedescription5">
+                    The Nabas Wind Farm in Aklan now provides clean and renewable energy to the Western Visayas grid on a regular basis, because of its 18 massive wind turbines that have also become tourist attractions in the previously quiet village. The Nabas Wind Farm is the province's most expensive project, costing much more than Php 4 billion, and is located in Barangay Pawa, some 25 kilometers from the renowned Boracay beaches.
+                </p>
+            </div>
+        </div>
+        <div class="formdiv">
+                <h1 class="formheading"> TRAVEL FORM</h1>
+                <form action="/action_page.php">
+                    <label for="First Name" style="font-family: Arial;"><b>First Name</b></label><br>
+                    <input type="text" id="First Name" name="First Name" placeholder="Enter Your First Name Here"><br>
+                    <label for="Last Name" style="font-family: Arial;"><b>Last Name</b></label><br>
+                    <input type="text" id="Last Name" name="Last Name" placeholder="Enter Your Last Name Here"><br>
+                    <label for="Address" style="font-family: Arial;"><b>Address</b></label><br>
+                    <input type="text" id="Address" name="Address" placeholder="Enter Address Here"><br>
+                    <label for="Country" style="font-family: Arial;"><b>Country</b></label><br>
+                    <select id="country" name="country">
+                        <option>Select Country</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AX">Aland Islands</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, Democratic Republic of the Congo</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Cote D'Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CW">Curacao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">French Southern Territories</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">Heard Island and Mcdonald Islands</option>
+                        <option value="VA">Holy See (Vatican City State)</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran, Islamic Republic of</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KR">Korea, Republic of</option>
+                        <option value="XK">Kosovo</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libyan Arab Jamahiriya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao</option>
+                        <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="MD">Moldova, Republic of</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="AN">Netherlands Antilles</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestinian Territory, Occupied</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RE">Reunion</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russian Federation</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="BL">Saint Barthelemy</option>
+                        <option value="SH">Saint Helena</option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="MF">Saint Martin</option>
+                        <option value="PM">Saint Pierre and Miquelon</option>
+                        <option value="VC">Saint Vincent and the Grenadines</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="CS">Serbia and Montenegro</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SJ">Svalbard and Jan Mayen</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syrian Arab Republic</option>
+                        <option value="TW">Taiwan, Province of China</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania, United Republic of</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-Leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UM">United States Minor Outlying Islands</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Viet Nam</option>
+                        <option value="VG">Virgin Islands, British</option>
+                        <option value="VI">Virgin Islands, U.s.</option>
+                        <option value="WF">Wallis and Futuna</option>
+                        <option value="EH">Western Sahara</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select>
+                    <br>
+                    <label for="City" style="font-family: Arial;"><b>City</b></label><br>
+                    <input type="text" id="City" name="City" placeholder="Enter City Name Here"><br>
+                    <label for="email" style="font-family: Arial;"><b>E-mail</b></label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter E-mail Here"><br>
+                    <label for="Contact Number" style="font-family: Arial;"><b>Contact Number</b></label><br>
+                    <input type="text" id="Contact Number" name="Contact Number" placeholder="Enter Contact Number Here"><br>
+                    <br>
+                    <p> We'll make sure to reach out and  contact you if any flight and tour organizations are available! </p>
+                    <br>
+                    <input type="submit" value="SUBMIT DETAILS">
+                    <input type="submit" value="Have More Questions? Click Here!">
+                    </form>
+
+                </div>
+
+                <div class="rightdiv2">
+                    <h1 class="formheading"> PROVINCE MISSION AND VISION</h1>
+                    <br>
+                        <p>
+                            <b>Vision</b>
+                            <br>
+                            <br>
+                            Progressive and Sustainable Aklan
+                            <br>
+                            <br>
+                            <b>Mission</b>
+                            <br>
+                            <br>
+                            <i>To realize its vision, the province shall ensure and support, among other things:</i>
+                            <br>
+                            <br>
+                            <ul class="a">
+                                <li>Preservation, enrichment and promotion of arts, culture and tourism;</li>
+                                <li>Promotion of health, social services and non-handicapping environment;</li>
+                                <li>Enhancement of the right of the people to a balanced ecology;</li>
+                                <li>Encouragement and support to the development of appropriate and self-reliant, scientific and technological capabilities;</li>
+                                <li>Enhancement of moral values and public accountabilities;</li>
+                                <li>Enhancement of economic prosperity, food security and social justice;</li>
+                                <li> Promotion of equal employment and livelihood opportunities among the residents;</li>
+                                <li> Enhancement of Disaster Risk Reduction and Management System and increase adaptive capacity measures to the effects of Global Warming resulting to climate change;</li>
+                                <li>Maintenance of peace and order; and</li>
+                                <li>Improve the living conditions of the people of Aklan. </li>  
+                            </ul>
+                            <br>
+
+                        </p>
+                    </div>
+
+
+          <img src="Untitled_design__11_-removebg-preview.png" alt="seal" class="img">
+
+    </body>
+</head>
+</html>                                           

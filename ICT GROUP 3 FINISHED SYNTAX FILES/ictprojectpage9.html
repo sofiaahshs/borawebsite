@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resort booking form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(boracay26shoestring.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+#form{
+    background-color: rgba(66, 122, 252, 0.686);
+    height:400px;
+    width:800px;
+    margin: auto;
+    margin-top: 200px;
+}
+.div2 {
+        border: none;
+        background-color: rgb(70, 114, 236);    
+        text-align: center;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 55px;
+        margin-top: 200px;
+    }
+
+#first-group{
+    border:none;
+    width:400px;
+    margin-top: 38px;
+    position: absolute;
+}
+#content{
+    border: 1px solid #fff;
+    margin:10px;
+    margin-left: 8px;
+    padding:5px;
+}
+#content #input-group{
+    border:none;
+    outline:none;
+    background: transparent;
+    margin-left:8px;
+    width:300px;
+    color:#fff;
+}
+::placeholder{
+    color:#fff;
+}
+.fa{
+    display:inline-block;
+    color:rgb(0, 9, 29);
+    border-right:1px solid #fff;
+    padding:8px;
+    margin-left: 8px;
+}
+#second-group{
+    border:none;
+    width:400px;
+    margin-top: 55px;
+    margin-left:400px;
+}
+#submit-btn{
+    margin-top: 30px;
+    margin-left: 600px;
+    background: rgb(41, 76, 158);
+    color:#fff;
+    width:150px;
+    border:1px rgba(66, 122, 252);
+    border-radius: 5px;
+    outline:none;
+    padding:10px;
+    font-size: 20px;
+}
+
+.calc {
+    background-color: rgba(72, 127, 255, 0.813);
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 20px;
+    margin-bottom: -500px;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(90, 114, 235);
+  border-radius: 4px;
+}
+
+input[type=button] {
+  background-color: #3b69d6;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+
+.button1 {
+  background-color: white; 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #2c70ed;
+}
+
+.button1:hover {
+  background-color: #2346c7;
+  color: rgb(255, 255, 255);
+}
+
+.button2 {
+  background-color: white; 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #2c70ed;
+}
+
+.button2:hover {
+  background-color: #2346c7;
+  color: rgb(255, 255, 255);
+}
+</style>
+<body>
+    <script>
+                function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+
+    </script> 
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+                <h1 class="text-white text-center">Hotel Accomodation form</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="First name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="input-group" placeholder="Phone number">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Departure Date">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: rgb(66, 122, 252);">
+                            <option value="">No.of guests</option>
+                            <option value="">1-5</option>
+                            <option value="">6-10</option>
+                            <option value="">11-20</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Last name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="Email">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Arrival Date">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: rgb(66, 122, 252);">
+                            <option value="">Room Type</option>
+                            <option value="">AC</option>
+                            <option value="">Non-AC</option>
+                            <option value="">Single Bed</option>
+                            <option value="">Double Bed</option>
+                        </select>
+                    </div>
+            
+                </div>
+                <div><button type="submit" value="Submit" id="submit-btn" onclick="alert('Thank You for your submission')">Book Now</button></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                </div>
+            <form class="calc">
+                <div class="div2">
+                    <h1>Expenditure Calculator</h1>
+            Price of Desired Suite type : <input type="text" id="firstNumber" /><br>
+            Number of Rooms booked: <input type="text" id="secondNumber" /><br>
+            <input type="button" class="button1" onClick="multiplyBy()" Value="Calculate" />
+            </form>
+            <p>Grand Total : <br>
+            <span id = "result"></span>
+            </p>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
+              
